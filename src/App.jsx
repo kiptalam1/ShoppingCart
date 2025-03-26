@@ -1,8 +1,13 @@
-
+import { Outlet, Link } from 'react-router-dom';
 
 function App() {
 
-  return (<h1>Shopping Cart</h1>);
+  return (
+		<div>
+			<h1>Shopping Cart</h1>
+      <Outlet />
+		</div>
+	);
     
 }
 
