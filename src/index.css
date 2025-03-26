@@ -11,20 +11,22 @@
 	font-weight: 400;
 
 	color: rgba(245, 245, 245, 0.8);
-	background-color: #000000;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: smooth;
+	--white-smoke: rgba(245, 245, 245, 0.8);
+	--green-color: #A8FF35;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
-  align-items: center;
-  padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100vw;
+	align-items: center;
+	padding: 0 80px;
+	background-color: #000000;
+position: relative;
 }
-
