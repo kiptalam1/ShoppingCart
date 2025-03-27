@@ -4,7 +4,6 @@ import styles from "./styles/App.module.css";
 function App() {
 	return (
 		<div>
-			<Header />
 			<main className={styles.mainContent}>
 				<Outlet />
 			</main>

@@ -1,0 +1,23 @@
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background: url("../assets/mall-bg.webp") center/cover no-repeat fixed;
+	position: relative;
+	overflow: hidden;
+	margin-top: 0;
+}
+/* Dark overlay to dim the image */
+.homeContainer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust for more or less dimming */
+	z-index: 1;
+}

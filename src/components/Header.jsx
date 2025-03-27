@@ -8,9 +8,9 @@ const Header = () => {
 			</div>
 			<NavBar />
 			<div className={styles.socials}>
-				<i class='devicon-linkedin-plain'></i>
+				<i className='devicon-linkedin-plain'></i>
 
-				<i class='devicon-github-original'></i>
+				<i className='devicon-github-original'></i>
 			</div>
 		</div>
 	);
