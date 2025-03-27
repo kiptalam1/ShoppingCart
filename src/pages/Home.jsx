@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Button from "../components/Button";
+import Icon from "../components/Icon";
 export default function Home() {    
     return (
 			<div className={styles.homeContainer}>
@@ -13,6 +14,7 @@ export default function Home() {
 					</p>
 					<Button type='button' name='SHOP NOW' />
 				</div>
+				<Icon />
 			</div>
 		);
 }

@@ -31,8 +31,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap:30px;
-	border: 1px solid white;
+	gap:40px;
+	/* border: 1px solid white; */
 }
 .homeAction h1 {
 	font-size: 3rem;
