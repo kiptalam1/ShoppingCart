@@ -5,6 +5,7 @@
     width: 60%;
     padding: 20px;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 .searchInput{
     width: 100%;
@@ -20,4 +21,19 @@
 .searchInput::placeholder{
     color: var(--white-smoke);
     opacity: 0.8;
+}
+.searchBtn {
+    background-color: var(--green-color);
+    box-shadow: none;
+    color: #000000;
+    border: none;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.searchBtn:hover {
+    box-shadow: none;
+    transform: scale(1.05);
 }

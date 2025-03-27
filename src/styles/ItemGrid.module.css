@@ -1,0 +1,8 @@
+.itemGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 80px;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
