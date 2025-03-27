@@ -1,0 +1,26 @@
+.shopContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: url("../assets/shop-bg.webp") center/cover no-repeat fixed;
+	position: relative;
+	overflow: hidden;
+	margin-top: 0;
+}
+/* Dark overlay to dim the image */
+.shopContainer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust for more or less dimming */
+	z-index: 1;
+}
+.shopContainer > * {
+	z-index: 2;
+	position: relative;
+}

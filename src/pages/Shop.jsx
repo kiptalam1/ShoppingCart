@@ -1,8 +1,10 @@
+import styles from '../styles/Shop.module.css';
+import Header from '../components/Header.jsx';
+
 export default function Shop() {    
     return (
-        <div>
-            <h2>Shop Page</h2>
-            <p>Here you can buy products</p>
+        <div className={styles.shopContainer}>
+            <Header />
         </div>
     );
 }
