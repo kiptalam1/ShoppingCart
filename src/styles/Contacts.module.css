@@ -1,7 +1,8 @@
-.shopContainer {
+.contactsContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 20px;
 	height: 100vh;
 	width: 100vw;
 	background: url("../assets/shop-bg.webp") center/cover no-repeat fixed;
@@ -9,8 +10,7 @@
 	overflow: hidden;
 	margin-top: 0;
 }
-/* Dark overlay to dim the image */
-.shopContainer::before {
+.contactsContainer::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -20,7 +20,7 @@
 	background: rgba(0, 0, 0, 0.5); /* Adjust for more or less dimming */
 	z-index: 1;
 }
-.shopContainer > * {
+.contactsContainer > * {
 	z-index: 2;
 	position: relative;
 }

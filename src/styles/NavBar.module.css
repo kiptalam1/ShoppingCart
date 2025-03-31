@@ -22,3 +22,24 @@
     text-decoration: none;
     border-bottom: 2px solid var(--green-color);
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 15px;
+    }
+
+    .navLink, .activeLink {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 5px;
+    }
+
+    .navLink, .activeLink {
+        font-size: 1rem;
+    }
+}
