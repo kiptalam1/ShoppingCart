@@ -30,7 +30,7 @@ const ItemGrid = () => {
 			}
 		};
 		fetchProducts();
-	}, [error]);
+	}, []);
 
 	useEffect(() => {
 		localStorage.setItem("products", JSON.stringify(items));
@@ -49,14 +49,7 @@ const ItemGrid = () => {
 			{items.map((item) => (
 				<ItemCard
 					key={item.id}
-					name={
-						item.title.length > 25
-							? item.title.substring(0, 22) + "..."
-							: item.title
-					}
-					price={item.price}
-					rating={item.rating.rate}
-					url={item.image}
+					item={item}
 				/>
 			))}
 		</div>
