@@ -5,8 +5,10 @@ import styles from "../styles/ItemGrid.module.css"; // Assuming you have a CSS m
 
 const ItemGrid = () => {
 	const [items, setItems] = useState(
-        localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : []
-    );
+		localStorage.getItem("products")
+			? JSON.parse(localStorage.getItem("products"))
+			: []
+	);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 
@@ -30,9 +32,9 @@ const ItemGrid = () => {
 		fetchProducts();
 	}, [error]);
 
-    useEffect(() => {
-        localStorage.setItem("products", JSON.stringify(items));
-    }, [items]);
+	useEffect(() => {
+		localStorage.setItem("products", JSON.stringify(items));
+	}, [items]);
 
 	if (loading) {
 		return <div>Loading...</div>; // Display a loading message
@@ -45,7 +47,17 @@ const ItemGrid = () => {
 	return (
 		<div className={styles.itemGrid}>
 			{items.map((item) => (
-				<ItemCard key={item.id} name={item.title.length > 25 ? item.title.substring(0, 22) + "..." : item.title} url={item.image} />
+				<ItemCard
+					key={item.id}
+					name={
+						item.title.length > 25
+							? item.title.substring(0, 22) + "..."
+							: item.title
+					}
+					price={item.price}
+					rating={item.rating.rate}
+					url={item.image}
+				/>
 			))}
 		</div>
 	);
