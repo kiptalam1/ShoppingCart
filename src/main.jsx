@@ -5,7 +5,7 @@ import { routes } from "../src/routes/routes.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import "./index.css";
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, { basename: "/ShoppingCart" });
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
